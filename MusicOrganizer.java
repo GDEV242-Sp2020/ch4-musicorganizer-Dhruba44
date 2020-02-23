@@ -4,10 +4,17 @@ import java.util.Random;
 /**
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
+<<<<<<< Updated upstream
  * 4.45 - Run the entire track by selecting random songs
  * 
  * @author Dhruba Dey
  * @version 02.23.2020
+=======
+ * Run the entire track by selecting random songs
+ * 
+ * @Dhruba Dey
+ * @02/23/2020
+>>>>>>> Stashed changes
  */
 public class MusicOrganizer
 {
@@ -32,7 +39,11 @@ public class MusicOrganizer
     }
     
     /**
+<<<<<<< Updated upstream
      * Run the entire track using random songs
+=======
+     * Run the entire track by selectin random songs
+>>>>>>> Stashed changes
      */
     public void runEntireTrack() 
     {
@@ -48,7 +59,7 @@ public class MusicOrganizer
             if (entireTr.contains(nextTrack)== false)
             {
                 entireTr.add(nextTrack);
-                System.out.println("Now Playing track number =" + nextTrack);
+                System.out.println("Now playing track number =" + nextTrack);
                 playTrack(nextTrack);
             }
         }
