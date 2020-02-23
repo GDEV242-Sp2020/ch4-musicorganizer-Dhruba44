@@ -4,9 +4,10 @@ import java.util.Random;
 /**
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
+ * 4.45 - Run the entire track by selecting random songs
  * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
+ * @author Dhruba Dey
+ * @version 02.23.2020
  */
 public class MusicOrganizer
 {
@@ -31,7 +32,7 @@ public class MusicOrganizer
     }
     
     /**
-     * Run the entire track using random song
+     * Run the entire track using random songs
      */
     public void runEntireTrack() 
     {
