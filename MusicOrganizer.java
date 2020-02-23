@@ -21,26 +21,26 @@ public class MusicOrganizer
     /**
      * Create a MusicOrganizer
      */
-    public MusicOrganizer()
+    public MusicOrganizer(String folder)
     {
         tracks = new ArrayList<>();
         player = new MusicPlayer();
         reader = new TrackReader();
-        readLibrary("../audio");
+        readLibrary(folder);
         System.out.println("Music library loaded. " + getNumberOfTracks() + " tracks.");
         System.out.println();
     }
     
-     /**
-     * Select a track on random basis and play it
-     */
+   /**
+   * Select a track on random basis and play it
+   */
    
    public void randomTrackPlay ()
     {    
     //Create a random track
     	Random tr = new Random(); 
     	
-    // Generating next random track within the range of avail tracks
+    // Generating next random track within the range of available tracks
     	int nextTrack = tr.nextInt(getNumberOfTracks());
     	System.out.println ("index of random track =" + nextTrack);
     	    	
